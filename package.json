@@ -1,0 +1,27 @@
+{
+  "name": "sabelotodo",
+  "version": "1.0.0",
+  "description": "IA educativa autosuficiente y de bajo costo para aulas rurales",
+  "homepage": "https://github.com/voscarmv/sabelotodo#readme",
+  "bugs": {
+    "url": "https://github.com/voscarmv/sabelotodo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voscarmv/sabelotodo.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "ollama": "^0.5.17",
+    "pg": "^8.16.3",
+    "readline": "^1.3.0"
+  }
+}
