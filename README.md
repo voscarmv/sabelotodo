@@ -20,5 +20,15 @@ Se priorizará el uso de herramientas **libres y de código abierto** con el fin
 * Incorporar un sistema **RAG** (Retrieval-Augmented Generation), opcionalmente administrado mediante **LangChain**.
 * Para el reconocimiento de palabras clave por voz (similar a “Hey Google”, “Alexa” o “Siri”), emplear **rhasspy-remote-http-hermes**.
 
+## Current state of develpoment
 
+1. Run `./install.sh` to install ollama API and qwen2.5:3B locally
+2. Install `posgresql` and set up your credentials in `.env`
+3. Test with `./cli.sh`
+4. Have a chat with `node index.js`
 
+## Next steps
+
+1. Use `snippets/langsearch.js` as framework and pattern to implement langsearch functions in `tools.js`
+2. Follow `snippets/rhasspy.md` to implement voice activation
+3. Will maybe need to refactor `index.js` into an express server to handle Rhasspy webhook calls.
