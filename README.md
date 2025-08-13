@@ -32,4 +32,4 @@ Se priorizará el uso de herramientas **libres y de código abierto** con el fin
 1. Use `snippets/langsearch.js` as framework and pattern to implement langsearch functions in `tools.js`
 2. Follow `snippets/rhasspy.md` to implement voice activation
 3. Will maybe need to refactor `index.js` into an express server to handle Rhasspy webhook calls.
-4. Consider using OpenWakeword + Whisper + webrtcvad instead of Rhasspy.
+4. Consider using OpenWakeword (or voice2json) + Whisper + webrtcvad instead of Rhasspy.
