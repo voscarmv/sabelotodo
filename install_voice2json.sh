@@ -16,12 +16,17 @@ sudo make install
 
 # Get libffi http://mirrors.kernel.org/ubuntu/pool/main/libf/libffi/libffi6_3.2.1-8_amd64.deb
 # Info https://boyter.org/posts/installing-voice2json-ubuntu/
+# Other archs https://old-releases.ubuntu.com/ubuntu/pool/main/libf/libffi/
+# For rasppi4 https://old-releases.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi6_3.2.1-8_arm64.deb
 
 cd ../../pkg
 wget http://mirrors.kernel.org/ubuntu/pool/main/libf/libffi/libffi6_3.2.1-8_amd64.deb
 sudo apt install ./libffi6_3.2.1-8_amd64.deb
 
 # Get voice2json https://voice2json.org/install.html#debian-package
+# Consider installing from source https://voice2json.org/install.html#from-source
+# For rasppi 4 arch https://github.com/synesthesiam/voice2json/releases/download/v2.1/voice2json_2.1_arm64.deb
+# From https://voice2json.org/install.html#debian-package
 
 wget https://github.com/synesthesiam/voice2json/releases/download/v2.1/voice2json_2.1_amd64.deb
 sudo apt install ./voice2json_2.1_amd64.deb
