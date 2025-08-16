@@ -4,7 +4,7 @@
 
  console.log(input.text);
 
- if(input.text === wakeword){
+ if(input.text.includes(wakeword)){
     process.exit(0);
  }
 

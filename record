@@ -1,167 +1,39 @@
-{"text": "", "likelihood": 0.9884116, "transcribe_seconds": 2.6434091179999086, "wav_seconds": 2.468, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99345423, "transcribe_seconds": 4.943705819999991, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "computadora", "likelihood": 0.9898302, "transcribe_seconds": 2.6340454090000094, "wav_seconds": 2.686, "tokens": [{"token": "computadora", "start_time": 0.00203006, "end_time": 2.67, "likelihood": 0.991748}], "timeout": false}
-{"text": "cresta", "likelihood": 0, "transcribe_seconds": 3.198656865000089, "wav_seconds": 2.875, "tokens": [{"token": "cresta", "start_time": 0.0, "end_time": 1.8, "likelihood": 0.0833743}], "timeout": false}
-{"text": "", "likelihood": 0.99252402, "transcribe_seconds": 1.1765799139999444, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "computadora", "likelihood": 0.987525, "transcribe_seconds": 0.34558732699997563, "wav_seconds": 1.853, "tokens": [{"token": "computadora", "start_time": 0.00029069, "end_time": 1.83, "likelihood": 0.988894}], "timeout": false}
-{"text": "qué tal computadora como éstas como como estado", "likelihood": 0, "transcribe_seconds": 3.7122903780000343, "wav_seconds": 3.811, "tokens": [{"token": "qué", "start_time": 0.000274965, "end_time": 0.569963, "likelihood": 0.775551}, {"token": "tal", "start_time": 0.569963, "end_time": 1.2589, "likelihood": 0.987181}, {"token": "computadora", "start_time": 1.2589, "end_time": 1.41035, "likelihood": 0.972766}, {"token": "como", "start_time": 1.41602, "end_time": 1.71486, "likelihood": 0.790438}, {"token": "éstas", "start_time": 1.71501, "end_time": 2.19086, "likelihood": 0.528807}, {"token": "como", "start_time": 2.2356, "end_time": 2.43239, "likelihood": 0.947391}, {"token": "como", "start_time": 2.43239, "end_time": 2.94005, "likelihood": 0.731757}, {"token": "estado", "start_time": 3.14568, "end_time": 3.50755, "likelihood": 0.989887}], "timeout": false}
-{"text": "computadora como éstas como como has estado platires un poco más de", "likelihood": 0, "transcribe_seconds": 4.169746324000016, "wav_seconds": 4.99, "tokens": [{"token": "computadora", "start_time": 0.00372576, "end_time": 1.38057, "likelihood": 0.984878}, {"token": "como", "start_time": 1.38491, "end_time": 1.68521, "likelihood": 0.794736}, {"token": "éstas", "start_time": 1.68551, "end_time": 2.19073, "likelihood": 0.536616}, {"token": "como", "start_time": 2.2292, "end_time": 2.57527, "likelihood": 0.879749}, {"token": "como", "start_time": 2.58069, "end_time": 2.89232, "likelihood": 0.736583}, {"token": "has", "start_time": 2.93069, "end_time": 3.09, "likelihood": 0.521518}, {"token": "estado", "start_time": 3.12035, "end_time": 3.62439, "likelihood": 0.987202}, {"token": "platires", "start_time": 3.62709, "end_time": 4.17, "likelihood": 0.470239}, {"token": "un", "start_time": 4.20198, "end_time": 4.4135, "likelihood": 0.970132}, {"token": "poco", "start_time": 4.4135, "end_time": 4.6522, "likelihood": 1.0}, {"token": "más", "start_time": 4.6522, "end_time": 4.77006, "likelihood": 0.99596}, {"token": "de", "start_time": 4.77027, "end_time": 4.86022, "likelihood": 0.808691}], "timeout": true}
-{"text": "tiene un poco más de ti por favor", "likelihood": 0, "transcribe_seconds": 2.117984438999997, "wav_seconds": 2.093, "tokens": [{"token": "tiene", "start_time": 0.0663759, "end_time": 0.140275, "likelihood": 0.557639}, {"token": "un", "start_time": 0.230436, "end_time": 0.590834, "likelihood": 0.970819}, {"token": "poco", "start_time": 0.590834, "end_time": 0.811646, "likelihood": 1.0}, {"token": "más", "start_time": 0.811663, "end_time": 1.02, "likelihood": 0.989774}, {"token": "de", "start_time": 1.02061, "end_time": 1.17123, "likelihood": 1.0}, {"token": "ti", "start_time": 1.17129, "end_time": 1.35, "likelihood": 0.949251}, {"token": "por", "start_time": 1.35279, "end_time": 1.53468, "likelihood": 0.990011}, {"token": "favor", "start_time": 1.53596, "end_time": 1.54466, "likelihood": 1.0}], "timeout": false}
-{"text": "por favor", "likelihood": 0.9266416, "transcribe_seconds": 1.3234297149999747, "wav_seconds": 1.5, "tokens": [{"token": "por", "start_time": 0.0114123, "end_time": 0.352062, "likelihood": 1.0}, {"token": "favor", "start_time": 0.352062, "end_time": 1.5, "likelihood": 1.0}], "timeout": false}
-{"text": "", "likelihood": 0.9946027, "transcribe_seconds": 5.001144387999943, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99316257, "transcribe_seconds": 5.147263945000077, "wav_seconds": 5.003, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9698999, "transcribe_seconds": 4.995884064000052, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9839757, "transcribe_seconds": 5.108682567999949, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9840625, "transcribe_seconds": 5.083733050000092, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9837848, "transcribe_seconds": 5.054552475000037, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99566695, "transcribe_seconds": 4.979106926999975, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99866686, "transcribe_seconds": 4.929065001000026, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9686202, "transcribe_seconds": 4.505237266999984, "wav_seconds": 4.5, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99058192, "transcribe_seconds": 4.1012387030000355, "wav_seconds": 4.093, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9753611, "transcribe_seconds": 2.0473761619999777, "wav_seconds": 2.125, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9618852, "transcribe_seconds": 2.40744836500005, "wav_seconds": 2.343, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9856737, "transcribe_seconds": 2.946756978999929, "wav_seconds": 2.814, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.98087, "transcribe_seconds": 3.9117693820001023, "wav_seconds": 3.843, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99448579, "transcribe_seconds": 2.193235737000009, "wav_seconds": 2.093, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9842962, "transcribe_seconds": 3.086322600000017, "wav_seconds": 3.125, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99039222, "transcribe_seconds": 4.169627708000007, "wav_seconds": 4.154, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99181306, "transcribe_seconds": 2.2823109160000286, "wav_seconds": 2.218, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99306223, "transcribe_seconds": 2.4217676069999925, "wav_seconds": 2.282, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9677005, "transcribe_seconds": 2.713996548999944, "wav_seconds": 2.814, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9755224, "transcribe_seconds": 2.6756951030000664, "wav_seconds": 2.75, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99277476, "transcribe_seconds": 5.033181554000066, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9738038, "transcribe_seconds": 5.1233765160000075, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99568417, "transcribe_seconds": 4.948042450999992, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99279567, "transcribe_seconds": 5.057071090000022, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99543091, "transcribe_seconds": 5.005380633999948, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99499303, "transcribe_seconds": 5.008169915999929, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99331937, "transcribe_seconds": 5.031252877999918, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9940618, "transcribe_seconds": 4.98640229099999, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99566803, "transcribe_seconds": 5.026902422000035, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99528263, "transcribe_seconds": 5.091795093999963, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99669866, "transcribe_seconds": 4.97409788199991, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99712308, "transcribe_seconds": 5.064861507000046, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99524124, "transcribe_seconds": 5.025555510000004, "wav_seconds": 5.003, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99566311, "transcribe_seconds": 5.0025204410000015, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99396986, "transcribe_seconds": 4.995402516000013, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99849087, "transcribe_seconds": 5.123199688, "wav_seconds": 4.997, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.983766, "transcribe_seconds": 5.121316204999971, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9673354, "transcribe_seconds": 5.205247261000068, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9595332, "transcribe_seconds": 2.618517866999923, "wav_seconds": 2.654, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9661487, "transcribe_seconds": 2.683465575000014, "wav_seconds": 2.782, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9133707, "transcribe_seconds": 4.14075476000005, "wav_seconds": 4.0, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.911555, "transcribe_seconds": 4.118397429000083, "wav_seconds": 3.936, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99559149, "transcribe_seconds": 4.848790146000056, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99750098, "transcribe_seconds": 4.825353737, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99546923, "transcribe_seconds": 5.0114666399999805, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99851699, "transcribe_seconds": 5.069823833999976, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99482841, "transcribe_seconds": 4.995485823999957, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99625192, "transcribe_seconds": 5.118370748999951, "wav_seconds": 5.003, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99756937, "transcribe_seconds": 4.985970714000018, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99287995, "transcribe_seconds": 5.079769559000056, "wav_seconds": 4.997, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99747977, "transcribe_seconds": 5.16271215200004, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99416464, "transcribe_seconds": 5.013007293999976, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99670892, "transcribe_seconds": 5.006200779999972, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9967539, "transcribe_seconds": 5.084244427000044, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99615816, "transcribe_seconds": 4.993553739999925, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99522914, "transcribe_seconds": 5.101385148999952, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99531271, "transcribe_seconds": 4.988555419000022, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99671568, "transcribe_seconds": 4.986349577999931, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99509081, "transcribe_seconds": 5.0375455480000255, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99403411, "transcribe_seconds": 5.006165851000105, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99493711, "transcribe_seconds": 5.034555803999979, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99568035, "transcribe_seconds": 5.080974486000059, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99747591, "transcribe_seconds": 4.983327282000005, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99797835, "transcribe_seconds": 5.060822641999948, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9877437, "transcribe_seconds": 5.010973858999932, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99078731, "transcribe_seconds": 5.025680053000087, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9336049, "transcribe_seconds": 4.155576856000039, "wav_seconds": 4.125, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9542514, "transcribe_seconds": 4.155456971000035, "wav_seconds": 4.032, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9852811, "transcribe_seconds": 1.7472705559999895, "wav_seconds": 1.657, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9892945, "transcribe_seconds": 1.8045806760000005, "wav_seconds": 1.75, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99427317, "transcribe_seconds": 4.970032497000034, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99517077, "transcribe_seconds": 4.910228135000011, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9831566, "transcribe_seconds": 5.049808726999913, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9896764, "transcribe_seconds": 4.993329641000059, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99757003, "transcribe_seconds": 4.995782263999899, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99501236, "transcribe_seconds": 5.050050414999987, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99489429, "transcribe_seconds": 4.991974487999983, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99527021, "transcribe_seconds": 5.093713718000004, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99631439, "transcribe_seconds": 4.998270133999995, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9958303, "transcribe_seconds": 4.99960286299995, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99486853, "transcribe_seconds": 5.033103703000052, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99577913, "transcribe_seconds": 4.995074134999982, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99762103, "transcribe_seconds": 5.002491209000027, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99555641, "transcribe_seconds": 5.069663351000031, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99548878, "transcribe_seconds": 4.9878582140000844, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99488985, "transcribe_seconds": 5.096570961999987, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99625215, "transcribe_seconds": 4.996049685999992, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99749603, "transcribe_seconds": 5.000526511999965, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99747021, "transcribe_seconds": 5.044535413999938, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99548424, "transcribe_seconds": 4.98732338100001, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99554756, "transcribe_seconds": 5.072191499000041, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99549882, "transcribe_seconds": 5.149247347000028, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9952981, "transcribe_seconds": 5.020617545999926, "wav_seconds": 5.003, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99529065, "transcribe_seconds": 5.075037522999992, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9884528, "transcribe_seconds": 5.112362931000007, "wav_seconds": 4.997, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99004752, "transcribe_seconds": 5.016299135000054, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99485822, "transcribe_seconds": 5.003049180000062, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99727615, "transcribe_seconds": 5.012725387000046, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99626193, "transcribe_seconds": 4.979690339000058, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99669675, "transcribe_seconds": 5.087466117999952, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9896163, "transcribe_seconds": 4.997865910999963, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9844174, "transcribe_seconds": 5.112060542000108, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99493252, "transcribe_seconds": 5.009489284999972, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99072466, "transcribe_seconds": 5.01073718300006, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99618411, "transcribe_seconds": 5.000004011999977, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99577892, "transcribe_seconds": 4.963604955000051, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.825467, "transcribe_seconds": 5.053961767999908, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.85659, "transcribe_seconds": 5.164526843999965, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99528446, "transcribe_seconds": 4.916923610000026, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99554044, "transcribe_seconds": 5.062615413999993, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99664452, "transcribe_seconds": 5.064832587000069, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99715403, "transcribe_seconds": 5.049404041999992, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9147243, "transcribe_seconds": 5.035956619999979, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.883829, "transcribe_seconds": 5.0178413690000525, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9574018, "transcribe_seconds": 2.0873280530000784, "wav_seconds": 2.029, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9455667, "transcribe_seconds": 2.70711149400006, "wav_seconds": 2.5, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9653905, "transcribe_seconds": 2.751248303000011, "wav_seconds": 2.939, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9680322, "transcribe_seconds": 3.383587420000026, "wav_seconds": 3.407, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9768875, "transcribe_seconds": 2.776897985000005, "wav_seconds": 2.718, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.932646, "transcribe_seconds": 2.8944702760001064, "wav_seconds": 2.75, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9888551, "transcribe_seconds": 2.787216720999936, "wav_seconds": 2.811, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9814902, "transcribe_seconds": 2.818478067000001, "wav_seconds": 2.843, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9881181, "transcribe_seconds": 1.5227549769999769, "wav_seconds": 1.532, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9677976, "transcribe_seconds": 1.4758252449998963, "wav_seconds": 1.5, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9829681, "transcribe_seconds": 2.050093369000024, "wav_seconds": 2.032, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9857126, "transcribe_seconds": 2.0567448880000256, "wav_seconds": 2.061, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9744107, "transcribe_seconds": 1.9305197859999907, "wav_seconds": 1.811, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.978248, "transcribe_seconds": 1.8664048290000892, "wav_seconds": 1.782, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99339931, "transcribe_seconds": 1.8914601910000783, "wav_seconds": 1.843, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99162443, "transcribe_seconds": 1.9607204440000032, "wav_seconds": 1.904, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9755211, "transcribe_seconds": 3.0408464070000036, "wav_seconds": 3.032, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9891732, "transcribe_seconds": 3.0382244319999927, "wav_seconds": 2.968, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9740545, "transcribe_seconds": 2.0084806810000373, "wav_seconds": 2.0, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9888238, "transcribe_seconds": 2.001111231999971, "wav_seconds": 2.0, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99556739, "transcribe_seconds": 4.977442612000004, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99563374, "transcribe_seconds": 5.1003151569999545, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99540538, "transcribe_seconds": 5.050091417999965, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9954675, "transcribe_seconds": 5.007542061000095, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9316466999999999, "transcribe_seconds": 4.980638196999962, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9734217000000001, "transcribe_seconds": 5.066014313000096, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9961733, "transcribe_seconds": 5.018855798000004, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99513896, "transcribe_seconds": 4.99627315500004, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99568766, "transcribe_seconds": 4.98786277499994, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99667117, "transcribe_seconds": 5.089348561999941, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9902341, "transcribe_seconds": 5.02423967499999, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99010541, "transcribe_seconds": 5.075740725999935, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9788973, "transcribe_seconds": 4.990402614999994, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9821095, "transcribe_seconds": 5.064247753000018, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9482084, "transcribe_seconds": 2.1687770290000117, "wav_seconds": 2.093, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.9599128, "transcribe_seconds": 2.1318005819999826, "wav_seconds": 2.093, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99664637, "transcribe_seconds": 1.6308352649999733, "wav_seconds": 1.718, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99578767, "transcribe_seconds": 1.6759379189999208, "wav_seconds": 1.75, "tokens": [], "timeout": false}
-{"text": "", "likelihood": 0.99617154, "transcribe_seconds": 5.032175534000089, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99750934, "transcribe_seconds": 4.997559519999982, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.9956467, "transcribe_seconds": 5.049687151000057, "wav_seconds": 5.0, "tokens": [], "timeout": true}
-{"text": "", "likelihood": 0.99662768, "transcribe_seconds": 5.215869223000027, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99428277, "transcribe_seconds": 5.065848618000018, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99312707, "transcribe_seconds": 5.070562848999998, "wav_seconds": 4.997, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99136587, "transcribe_seconds": 5.035325535999846, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "oye computadora", "likelihood": 0.882359, "transcribe_seconds": 2.8681068929997764, "wav_seconds": 2.907, "tokens": [{"token": "oye", "start_time": 0.000568668, "end_time": 1.56027, "likelihood": 0.890843}, {"token": "computadora", "start_time": 1.63353, "end_time": 2.91, "likelihood": 0.994985}], "timeout": false}
+{"text": "oye computadora", "likelihood": 0.861147, "transcribe_seconds": 3.0115896639999846, "wav_seconds": 2.843, "tokens": [{"token": "oye", "start_time": 0.000652945, "end_time": 1.59027, "likelihood": 0.876844}, {"token": "computadora", "start_time": 1.65967, "end_time": 2.82, "likelihood": 0.99776}], "timeout": false}
+{"text": "", "likelihood": 0.99437717, "transcribe_seconds": 1.2439899200001037, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "oye computadora", "likelihood": 0.883389, "transcribe_seconds": 0.5422516679998353, "wav_seconds": 1.725, "tokens": [{"token": "oye", "start_time": 0.000137681, "end_time": 0.420317, "likelihood": 0.892216}, {"token": "computadora", "start_time": 0.496183, "end_time": 1.71, "likelihood": 0.994235}], "timeout": false}
+{"text": "oye computadora", "likelihood": 0.876051, "transcribe_seconds": 5.071911920000048, "wav_seconds": 2.843, "tokens": [{"token": "oye", "start_time": 0.00143657, "end_time": 1.53067, "likelihood": 0.886395}, {"token": "computadora", "start_time": 1.6035, "end_time": 2.82, "likelihood": 0.996981}], "timeout": false}
+{"text": "canta", "likelihood": 0.15436700000000003, "transcribe_seconds": 2.291692254000054, "wav_seconds": 2.125, "tokens": [{"token": "canta", "start_time": 0.0, "end_time": 1.08, "likelihood": 0.20761}], "timeout": false}
+{"text": "clásica", "likelihood": 0, "transcribe_seconds": 2.219499575999862, "wav_seconds": 2.186, "tokens": [{"token": "clásica", "start_time": 0.0, "end_time": 1.14, "likelihood": 0.148957}], "timeout": false}
+{"text": "la", "likelihood": 0, "transcribe_seconds": 1.0311276300001282, "wav_seconds": 2.15, "tokens": [{"token": "la", "start_time": 0.642346, "end_time": 0.820048, "likelihood": 0.171371}], "timeout": false}
+{"text": "la", "likelihood": 0, "transcribe_seconds": 1.5910741449999932, "wav_seconds": 2.157, "tokens": [{"token": "la", "start_time": 0.339036, "end_time": 0.581634, "likelihood": 0.407554}], "timeout": false}
+{"text": "que me cuentas que has hecho últimamente plática me un poco más de ti", "likelihood": 0.23460800000000004, "transcribe_seconds": 4.905352783000126, "wav_seconds": 5.0, "tokens": [{"token": "que", "start_time": 0.000792388, "end_time": 1.07254, "likelihood": 0.725363}, {"token": "me", "start_time": 1.07254, "end_time": 1.46419, "likelihood": 0.975231}, {"token": "cuentas", "start_time": 1.46734, "end_time": 1.88979, "likelihood": 0.986991}, {"token": "que", "start_time": 1.88979, "end_time": 2.0704, "likelihood": 0.901328}, {"token": "has", "start_time": 2.07333, "end_time": 2.21707, "likelihood": 0.998033}, {"token": "hecho", "start_time": 2.21735, "end_time": 2.43018, "likelihood": 0.999563}, {"token": "últimamente", "start_time": 2.43035, "end_time": 3.2101, "likelihood": 1.0}, {"token": "plática", "start_time": 3.21036, "end_time": 3.69002, "likelihood": 0.827553}, {"token": "me", "start_time": 3.69051, "end_time": 3.81003, "likelihood": 0.946112}, {"token": "un", "start_time": 3.81077, "end_time": 3.93504, "likelihood": 0.995608}, {"token": "poco", "start_time": 3.93515, "end_time": 4.20163, "likelihood": 1.0}, {"token": "más", "start_time": 4.20164, "end_time": 4.41, "likelihood": 0.989182}, {"token": "de", "start_time": 4.41065, "end_time": 4.56227, "likelihood": 1.0}, {"token": "ti", "start_time": 4.5623, "end_time": 4.5646, "likelihood": 0.900247}], "timeout": true}
+{"text": "que me cuentas que has hecho últimamente plática me un poco más de", "likelihood": 0, "transcribe_seconds": 6.039526303000002, "wav_seconds": 5.0, "tokens": [{"token": "que", "start_time": 0.00102179, "end_time": 1.31548, "likelihood": 0.72618}, {"token": "me", "start_time": 1.31548, "end_time": 1.73926, "likelihood": 0.965967}, {"token": "cuentas", "start_time": 1.74111, "end_time": 2.13, "likelihood": 0.989029}, {"token": "que", "start_time": 2.13001, "end_time": 2.31037, "likelihood": 0.901451}, {"token": "has", "start_time": 2.3133, "end_time": 2.45706, "likelihood": 0.998462}, {"token": "hecho", "start_time": 2.45733, "end_time": 2.67015, "likelihood": 0.999735}, {"token": "últimamente", "start_time": 2.67026, "end_time": 3.45007, "likelihood": 1.0}, {"token": "plática", "start_time": 3.45067, "end_time": 3.93004, "likelihood": 0.780192}, {"token": "me", "start_time": 3.93267, "end_time": 4.04478, "likelihood": 0.904016}, {"token": "un", "start_time": 4.04478, "end_time": 4.18251, "likelihood": 0.995394}, {"token": "poco", "start_time": 4.18257, "end_time": 4.44326, "likelihood": 1.0}, {"token": "más", "start_time": 4.44328, "end_time": 4.65017, "likelihood": 0.995746}, {"token": "de", "start_time": 4.65043, "end_time": 4.77013, "likelihood": 0.980977}], "timeout": true}
+{"text": "que me cuentas que has hecho últimamente plática me un poco más de", "likelihood": 0, "transcribe_seconds": 6.4861909500000365, "wav_seconds": 5.0, "tokens": [{"token": "que", "start_time": 0.000711577, "end_time": 1.31767, "likelihood": 0.71961}, {"token": "me", "start_time": 1.31767, "end_time": 1.73563, "likelihood": 0.977631}, {"token": "cuentas", "start_time": 1.74322, "end_time": 2.04201, "likelihood": 0.971867}, {"token": "que", "start_time": 2.04201, "end_time": 2.31129, "likelihood": 0.901053}, {"token": "has", "start_time": 2.31413, "end_time": 2.45706, "likelihood": 0.998948}, {"token": "hecho", "start_time": 2.45722, "end_time": 2.67007, "likelihood": 0.99957}, {"token": "últimamente", "start_time": 2.67026, "end_time": 3.45012, "likelihood": 1.0}, {"token": "plática", "start_time": 3.45099, "end_time": 3.93017, "likelihood": 0.842735}, {"token": "me", "start_time": 3.93942, "end_time": 4.07924, "likelihood": 0.950385}, {"token": "un", "start_time": 4.07924, "end_time": 4.17372, "likelihood": 0.993276}, {"token": "poco", "start_time": 4.17413, "end_time": 4.4414, "likelihood": 1.0}, {"token": "más", "start_time": 4.44141, "end_time": 4.68, "likelihood": 0.995165}, {"token": "de", "start_time": 4.6803, "end_time": 4.77015, "likelihood": 0.975927}], "timeout": true}
+{"text": "un poco más de las cosas", "likelihood": 0.9876359, "transcribe_seconds": 2.5549000309999883, "wav_seconds": 2.407, "tokens": [{"token": "un", "start_time": 0.00160756, "end_time": 0.630351, "likelihood": 0.996004}, {"token": "poco", "start_time": 0.630559, "end_time": 0.900912, "likelihood": 1.0}, {"token": "más", "start_time": 0.900914, "end_time": 1.17, "likelihood": 0.997626}, {"token": "de", "start_time": 1.17014, "end_time": 1.29021, "likelihood": 1.0}, {"token": "las", "start_time": 1.29021, "end_time": 1.77, "likelihood": 1.0}, {"token": "cosas", "start_time": 1.77, "end_time": 2.34, "likelihood": 0.996674}], "timeout": false}
+{"text": "un poco más de las cosas", "likelihood": 0.9886993, "transcribe_seconds": 1.7325787500001297, "wav_seconds": 2.654, "tokens": [{"token": "un", "start_time": 0.00229262, "end_time": 0.870354, "likelihood": 0.996431}, {"token": "poco", "start_time": 0.870395, "end_time": 1.14098, "likelihood": 1.0}, {"token": "más", "start_time": 1.14098, "end_time": 1.41017, "likelihood": 0.997625}, {"token": "de", "start_time": 1.41031, "end_time": 1.53014, "likelihood": 1.0}, {"token": "las", "start_time": 1.53014, "end_time": 2.01, "likelihood": 1.0}, {"token": "cosas", "start_time": 2.01, "end_time": 2.58, "likelihood": 0.997363}], "timeout": false}
+{"text": "un poco más de las cosas", "likelihood": 0.99238987, "transcribe_seconds": 1.5415030970000316, "wav_seconds": 2.657, "tokens": [{"token": "un", "start_time": 0.000364427, "end_time": 0.899763, "likelihood": 0.997585}, {"token": "poco", "start_time": 0.899763, "end_time": 1.1704, "likelihood": 1.0}, {"token": "más", "start_time": 1.1704, "end_time": 1.44005, "likelihood": 0.997617}, {"token": "de", "start_time": 1.44019, "end_time": 1.53029, "likelihood": 1.0}, {"token": "las", "start_time": 1.53029, "end_time": 2.01, "likelihood": 1.0}, {"token": "cosas", "start_time": 2.01, "end_time": 2.61, "likelihood": 0.997621}], "timeout": false}
+{"text": "que me cuentas que has hecho últimamente plática me un poco más de", "likelihood": 0, "transcribe_seconds": 8.640074851999998, "wav_seconds": 5.0, "tokens": [{"token": "que", "start_time": 0.000910456, "end_time": 1.33329, "likelihood": 0.714562}, {"token": "me", "start_time": 1.33329, "end_time": 1.73562, "likelihood": 0.971154}, {"token": "cuentas", "start_time": 1.73581, "end_time": 2.16024, "likelihood": 0.986889}, {"token": "que", "start_time": 2.16024, "end_time": 2.31077, "likelihood": 0.901342}, {"token": "has", "start_time": 2.31077, "end_time": 2.48409, "likelihood": 0.997136}, {"token": "hecho", "start_time": 2.48427, "end_time": 2.7301, "likelihood": 0.998827}, {"token": "últimamente", "start_time": 2.73052, "end_time": 3.72, "likelihood": 1.0}, {"token": "plática", "start_time": 3.72, "end_time": 3.96, "likelihood": 0.827869}, {"token": "me", "start_time": 3.96075, "end_time": 4.08004, "likelihood": 0.936604}, {"token": "un", "start_time": 4.08094, "end_time": 4.14888, "likelihood": 0.995539}, {"token": "poco", "start_time": 4.1493, "end_time": 4.47199, "likelihood": 1.0}, {"token": "más", "start_time": 4.47199, "end_time": 4.68, "likelihood": 0.995397}, {"token": "de", "start_time": 4.68028, "end_time": 4.77028, "likelihood": 0.978871}], "timeout": true}
+{"text": "qué te amenizan que te gusta cerati", "likelihood": 0.26817100000000005, "transcribe_seconds": 2.714719710000054, "wav_seconds": 2.657, "tokens": [{"token": "qué", "start_time": 0.0, "end_time": 0.269978, "likelihood": 0.499495}, {"token": "te", "start_time": 0.269978, "end_time": 0.899264, "likelihood": 0.987689}, {"token": "amenizan", "start_time": 0.899264, "end_time": 1.05, "likelihood": 0.993872}, {"token": "que", "start_time": 1.05092, "end_time": 1.32013, "likelihood": 0.980807}, {"token": "te", "start_time": 1.32039, "end_time": 1.71, "likelihood": 0.981176}, {"token": "gusta", "start_time": 1.71, "end_time": 1.77, "likelihood": 0.830728}, {"token": "cerati", "start_time": 1.8059, "end_time": 2.34082, "likelihood": 0.999107}], "timeout": false}
+{"text": "qué te amenizan que te gusta cerati", "likelihood": 0.18415099999999995, "transcribe_seconds": 2.7510044190000826, "wav_seconds": 2.564, "tokens": [{"token": "qué", "start_time": 0.0, "end_time": 0.27, "likelihood": 0.500197}, {"token": "te", "start_time": 0.270531, "end_time": 0.899618, "likelihood": 0.990307}, {"token": "amenizan", "start_time": 0.899618, "end_time": 0.99, "likelihood": 0.985862}, {"token": "que", "start_time": 0.992113, "end_time": 1.32017, "likelihood": 0.971048}, {"token": "te", "start_time": 1.32061, "end_time": 1.38752, "likelihood": 0.969584}, {"token": "gusta", "start_time": 1.38752, "end_time": 1.77, "likelihood": 0.77608}, {"token": "cerati", "start_time": 1.81754, "end_time": 2.34007, "likelihood": 0.99932}], "timeout": false}
+{"text": "qué te amenizan que te gusta cerati", "likelihood": 0.18279800000000002, "transcribe_seconds": 2.706008397000005, "wav_seconds": 2.593, "tokens": [{"token": "qué", "start_time": 0.0, "end_time": 0.27, "likelihood": 0.499837}, {"token": "te", "start_time": 0.270531, "end_time": 0.899421, "likelihood": 0.988573}, {"token": "amenizan", "start_time": 0.899421, "end_time": 0.99, "likelihood": 0.994116}, {"token": "que", "start_time": 0.990705, "end_time": 1.32007, "likelihood": 0.977199}, {"token": "te", "start_time": 1.32035, "end_time": 1.38528, "likelihood": 0.968906}, {"token": "gusta", "start_time": 1.38528, "end_time": 1.74, "likelihood": 0.760535}, {"token": "cerati", "start_time": 1.7984, "end_time": 2.35158, "likelihood": 0.999028}], "timeout": false}
+{"text": "un poco más de las cosas", "likelihood": 0.9890684, "transcribe_seconds": 1.7047470139998495, "wav_seconds": 2.625, "tokens": [{"token": "un", "start_time": 0.00258098, "end_time": 0.900408, "likelihood": 0.995991}, {"token": "poco", "start_time": 0.900653, "end_time": 1.31982, "likelihood": 1.0}, {"token": "más", "start_time": 1.31982, "end_time": 1.44, "likelihood": 0.99762}, {"token": "de", "start_time": 1.44014, "end_time": 1.56021, "likelihood": 1.0}, {"token": "las", "start_time": 1.56021, "end_time": 2.04, "likelihood": 1.0}, {"token": "cosas", "start_time": 2.04, "end_time": 2.55, "likelihood": 0.998412}], "timeout": false}
+{"text": "", "likelihood": 0.99553099, "transcribe_seconds": 4.876570231999949, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99488908, "transcribe_seconds": 4.728270412000029, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.9956303, "transcribe_seconds": 5.130299209999976, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99564673, "transcribe_seconds": 3.964783864999845, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99482671, "transcribe_seconds": 4.820040689000052, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99623083, "transcribe_seconds": 4.7515668000000915, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99556463, "transcribe_seconds": 4.828307888000154, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99563267, "transcribe_seconds": 4.66467687699992, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99574024, "transcribe_seconds": 4.950298988000213, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99573283, "transcribe_seconds": 5.051414237000017, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99559177, "transcribe_seconds": 5.096245449999969, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.99758762, "transcribe_seconds": 5.038446834000069, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.9801837, "transcribe_seconds": 5.057065592000072, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.9717117, "transcribe_seconds": 5.015461903999949, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.9771395, "transcribe_seconds": 5.059998876000009, "wav_seconds": 5.0, "tokens": [], "timeout": true}
+{"text": "", "likelihood": 0.9856034, "transcribe_seconds": 5.0893021399999725, "wav_seconds": 5.0, "tokens": [], "timeout": true}
