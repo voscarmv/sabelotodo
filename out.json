@@ -1,0 +1,1 @@
+{"text": " Computer, \u00bfwhat time is it?", "segments": [{"id": 0, "seek": 0, "start": 0.0, "end": 3.0, "text": " Computer, \u00bfwhat time is it?", "tokens": [50364, 22289, 11, 3841, 5479, 565, 307, 309, 30, 50514], "temperature": 0.0, "avg_logprob": -0.8851316625421698, "compression_ratio": 0.7777777777777778, "no_speech_prob": 0.13616402447223663}], "language": "es"}

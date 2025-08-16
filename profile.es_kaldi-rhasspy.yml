@@ -1,0 +1,58 @@
+---
+name: "es_kaldi-rhasspy"
+version: "1.1"
+
+language:
+  name: "spanish"
+  code: "es"
+
+text-to-speech:
+  espeak:
+    voice: "es"
+
+speech-to-text:
+  acoustic-model-type: "kaldi"
+  word-casing: "lower"
+  kaldi:
+    model-type: "nnet3"
+    base-graph-directory: !env "${profile_dir}/acoustic_model/base_graph"
+
+training:
+  acoustic-model-type: "kaldi"
+  kaldi:
+    model-type: "nnet3"
+    language-model-type: "text_fst"
+  large-files:
+    - !env "${profile_dir}/base_dictionary.txt"
+    - !env "${profile_dir}/base_language_model.txt"
+    - !env "${profile_dir}/base_language_model.fst"
+    - !env "${profile_dir}/g2p.fst"
+    - !env "${profile_dir}/g2p.corpus"
+    - !env "${profile_dir}/acoustic_model/base_graph/HCLG.fst"
+    - !env "${profile_dir}/acoustic_model/base_graph/words.txt"
+    - !env "${profile_dir}/acoustic_model/base_graph/phones/align_lexicon.txt"
+    - !env "${profile_dir}/acoustic_model/base_graph/phones/align_lexicon.int"
+
+voice-command:
+  # Minimum number of seconds a voice command must last (ignored otherwise)
+  minimum-seconds: 1.0
+
+  # Maximum number of seconds a voice command can last (timeout otherwise)
+  maximum-seconds: 120.0
+
+  # Seconds of speech detected before voice command is considered started
+  speech-seconds: 0.3
+
+  # Seconds of silence before voice command is considered ended
+  silence-seconds: 5.0
+
+  # Seconds of audio before voice command starts to retain in output
+  before-seconds: 0.5
+
+  # Seconds of audio to ignore before voice command
+  skip-seconds: 0.0
+
+  # webrtcvad specific settings
+  webrtcvad:
+    # Speech filtering aggressiveness 0-3 (3 is most aggressive) 
+    vad-mode: 3

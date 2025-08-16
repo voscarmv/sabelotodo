@@ -1,0 +1,58 @@
+{
+    "text": " \u00bfC\u00f3mo haces estado? \u00bfQu\u00e9 tal? \u00bfPlat\u00ed que me un poco m\u00e1s de ti?",
+    "segments": [
+        {
+            "id": 0,
+            "seek": 0,
+            "start": 0.0,
+            "end": 1.8,
+            "text": " \u00bfC\u00f3mo haces estado? \u00bfQu\u00e9 tal?",
+            "tokens": [
+                50364,
+                3841,
+                28342,
+                324,
+                887,
+                18372,
+                30,
+                3841,
+                15137,
+                4023,
+                30,
+                50454
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.5679487299036097,
+            "compression_ratio": 0.9078947368421053,
+            "no_speech_prob": 0.013957999646663666
+        },
+        {
+            "id": 1,
+            "seek": 0,
+            "start": 1.8,
+            "end": 3.2,
+            "text": " \u00bfPlat\u00ed que me un poco m\u00e1s de ti?",
+            "tokens": [
+                50454,
+                3841,
+                47,
+                14087,
+                870,
+                631,
+                385,
+                517,
+                10639,
+                3573,
+                368,
+                8757,
+                30,
+                50524
+            ],
+            "temperature": 0.0,
+            "avg_logprob": -0.5679487299036097,
+            "compression_ratio": 0.9078947368421053,
+            "no_speech_prob": 0.013957999646663666
+        }
+    ],
+    "language": "es"
+}
