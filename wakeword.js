@@ -3,7 +3,7 @@
 
  console.log(input.text);
 
- if(input.text.includes('computadora')){
+ if(input.text === 'computadora'){
     process.exit(0);
  }
 
