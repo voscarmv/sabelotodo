@@ -4,6 +4,7 @@ source whisper-env/bin/activate
 export LD_LIBRARY_PATH=/usr/local/src/openssl-1.1.1w
 node --env-file=.env tables.js
 echo $!
+EXIT=false
 
 while true ; do
     # Start voice2json in background writing to fifo
@@ -12,20 +13,22 @@ while true ; do
     PID=$!
     echo $PID
     EXIT=false
+    echo $EXIT
     # Just use an intermediate file and tail -f it duh
     # Read line by line
-    tail -f record | while read line ; do
+    while read line ; do
         > record # keep the file small
         echo "$line"
         if node wakeword.js "$line" "computadora"; then
             break
         fi
-        if node wakeword.js "$line" "finalizar"; then
+        if node wakeword.js "$line" "finaliza"; then
             EXIT=true
+            echo $EXIT
             break
         fi
-    done
-
+    done < <(tail -f record)
+    echo $EXIT
     # Recursively collect all descendants of a given PID
     list_descendants() {
     local parent=$1
