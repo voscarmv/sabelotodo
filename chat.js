@@ -11,7 +11,7 @@ function parseMessages(rows) {
     }
     return JSON.parse(arr.slice(0, -1) + ']');
 }
-const model = 'qwen2.5:0.5b';
+const model = 'qwen2.5:3b';
 (async () => {
     await db.postMessage({ role: 'user', content: message.text });
     let messages = await db.getAllMessages();

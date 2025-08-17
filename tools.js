@@ -3,14 +3,14 @@ const tools = [
         type: 'function',
         function: {
             name: 'getDate',
-            description: 'Get the current date and time',
+            description: 'Obtener la fecha y hora',
             parameters: {
                 type: 'object',
                 properties: {
                     language: {
                         type: 'string',
                         enum: ['en-US', 'es-MX'],
-                        description: 'The language of the date and time',
+                        description: 'El idioma de la fecha y hora',
                     }
                 },
                 required: ['language']
@@ -21,13 +21,13 @@ const tools = [
         type: 'function',
         function: {
             name: 'throwDice',
-            description: 'Throw N dice and get the results',
+            description: 'Tirar N dados y obtener los resultados',
             parameters: {
                 type: 'object',
                 properties: {
                     nDice: {
                         type: 'integer',
-                        description: 'Number N of dice to throw'
+                        description: 'Número N de dados a tirar'
                     }
                 },
                 required: ['nDice']

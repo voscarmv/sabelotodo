@@ -1,0 +1,1 @@
+curl iiab.io/install.txt | bash
