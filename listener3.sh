@@ -66,10 +66,12 @@ while true ; do
     # wait $PID
 
     if $EXIT ; then
+        pico2wave -l es-ES -w bot.wav "Adios" && aplay bot.wav
         exit
     fi
 
-    espeak -p 0 -v spanish 'que onda'
+    # espeak -p 0 -v spanish 'que onda'
+    pico2wave -l es-ES -w bot.wav "Que onda" && aplay bot.wav
 
     # Continue with record-command
     voice2json --profile ~/.local/share/voice2json/es_kaldi-rhasspy record-command > output.wav
@@ -77,7 +79,7 @@ while true ; do
     cat output.json
     BOT=`node --env-file=.env chat.js "./output.json"`
     echo $BOT
-    espeak -p 0 -v spanish "$BOT"
-    # pico2wave -l es-ES -w output.wav "Hola mundo" && aplay output.wav
+    # espeak -p 0 -v spanish "$BOT"
+    pico2wave -l es-ES -w bot.wav "$BOT" && aplay bot.wav
 
 done
