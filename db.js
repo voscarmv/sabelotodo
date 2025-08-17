@@ -23,8 +23,7 @@ async function ensureMessageTables() {
     const q = `
     create table if not exists messages (
       id serial primary key unique,
-      message text not null,
-      created_at timestamp with time zone default now());
+      message text not null);
     `;
     await pool.query(q);
     console.log('🐣 Message tables ensured');
@@ -73,14 +72,13 @@ async function postRecord(table, record = {}){
 }
 
 async function postMessage(msg){
-    return await pool.query(
-        `insert into messages (message) values($1) returning id`,
-        [JSON.stringify(msg)]
+    await pool.query(
+        `insert into messages (message) values('${JSON.stringify(msg)}');`,
     );
 }
 
 async function getAllMessages(){
-    const { rows } = await pool.query(`select * from messages order by created_at asc`);
+    const { rows } = await pool.query(`select * from messages order by id asc`);
     return rows;
 }
 

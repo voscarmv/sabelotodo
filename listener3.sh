@@ -2,11 +2,14 @@
 
 source whisper-env/bin/activate
 export LD_LIBRARY_PATH=/usr/local/src/openssl-1.1.1w
+echo start tables
 node --env-file=.env tables.js
-echo $!
+echo end tables
+# echo $!
 EXIT=false
 
 while true ; do
+    echo start loop
     # Start voice2json in background writing to fifo
     > record
     voice2json --profile ~/.local/share/voice2json/es2 transcribe-stream --open >> record &
@@ -75,4 +78,6 @@ while true ; do
     BOT=`node --env-file=.env chat.js "./output.json"`
     echo $BOT
     espeak -p 0 -v spanish "$BOT"
+    # pico2wave -l es-ES -w output.wav "Hola mundo" && aplay output.wav
+
 done

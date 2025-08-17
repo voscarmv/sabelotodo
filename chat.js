@@ -11,14 +11,14 @@ function parseMessages(rows) {
     }
     return JSON.parse(arr.slice(0, -1) + ']');
 }
-
+const model = 'qwen2.5:0.5b';
 (async () => {
     await db.postMessage({ role: 'user', content: message.text });
     let messages = await db.getAllMessages();
     let completion = await ollama.chat({
         messages: parseMessages(messages),
         tools,
-        model: "qwen2.5:3B",
+        model,
     });
     await db.postMessage(completion.message);
     if (completion.message.tool_calls && completion.message.tool_calls.length > 0) {
@@ -39,7 +39,7 @@ function parseMessages(rows) {
         completion = await ollama.chat({
             messages: parseMessages(messages),
             tools,
-            model: "qwen2.5:3B",
+            model,
         });
         await db.postMessage(completion.message);
     }
