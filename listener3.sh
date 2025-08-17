@@ -72,6 +72,7 @@ while true ; do
 
     # espeak -p 0 -v spanish 'que onda'
     pico2wave -l es-ES -w bot.wav "Que onda" && aplay bot.wav
+    # echo 'Hola mundo.' | festival --tts --language spanish
 
     # Continue with record-command
     voice2json --profile ~/.local/share/voice2json/es_kaldi-rhasspy record-command > output.wav
