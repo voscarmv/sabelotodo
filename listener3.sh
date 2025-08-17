@@ -20,7 +20,7 @@ while true ; do
         if node wakeword.js "$line" "computadora"; then
             break
         fi
-        if node wakeword.js "$line" "terminacion"; then
+        if node wakeword.js "$line" "finalizar"; then
             EXIT=true
             break
         fi
