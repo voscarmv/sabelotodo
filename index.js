@@ -1,10 +1,7 @@
 const ollama = require("ollama").default;
-const dotenv = require('dotenv');
 const readline = require('readline');
 const db = require('./db.js');
 const { tools, functions } = require('./tools.js');
-
-dotenv.config();
 
 const readLineAsync = () => {
     const rl = readline.createInterface({

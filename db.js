@@ -1,7 +1,4 @@
 const { Pool } = require('pg');
-const dotenv = require('dotenv');
-
-dotenv.config();
 
 const pool = new Pool({
     connectionString: process.env.db_url,
@@ -22,8 +19,25 @@ async function ensureTables() {
     console.log('🐣 Tables ensured');
 }
 
+async function ensureMessageTables() {
+    const q = `
+    create table if not exists messages (
+      id serial primary key unique,
+      message text not null,
+      created_at timestamp with time zone default now());
+    `;
+    await pool.query(q);
+    console.log('🐣 Message tables ensured');
+}
+
 async function dropTables(){
-    const q = `drop table messages; drop table users;`;
+    const q = `drop table if exists messages; drop table if exists users;`;
+    await pool.query(q);
+    console.log('🗑️ Tables dropped');    
+}
+
+async function dropMessageTables(){
+    const q = `drop table if exists messages;`;
     await pool.query(q);
     console.log('🗑️ Tables dropped');    
 }
@@ -58,10 +72,26 @@ async function postRecord(table, record = {}){
     return result.rows[0].id;
 }
 
+async function postMessage(msg){
+    return await pool.query(
+        `insert into messages (message) values($1) returning id`,
+        [JSON.stringify(msg)]
+    );
+}
+
+async function getAllMessages(){
+    const { rows } = await pool.query(`select * from messages order by created_at asc`);
+    return rows;
+}
+
 module.exports = {
     ensureTables,
     dropTables,
+    ensureMessageTables,
+    dropMessageTables,
     getRecordCol,
     getAllRecords,
-    postRecord
+    postRecord,
+    postMessage,
+    getAllMessages
 }
