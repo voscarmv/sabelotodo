@@ -20,16 +20,17 @@ Se priorizará el uso de herramientas **libres y de código abierto** con el fin
 * Incorporar un sistema **RAG** (Retrieval-Augmented Generation), opcionalmente administrado mediante **LangChain**.
 * Para el reconocimiento de palabras clave por voz (similar a “Hey Google”, “Alexa” o “Siri”), emplear una combinación de **voice2json** y **whisper** de OpenAI.
 
-## Current state of develpoment
+## Estado actual del desarrollo
 
-1. Run `./install.sh` to install ollama API and qwen2.5:3B locally
-2. Install `posgresql` and set up your credentials in `.env`
-3. Test with `./cli.sh`
-4. Have a text chat with `node index.js`
-5. Have a verbal chat with `./listener3.sh`
+1. Ejecuta `./install.sh` para instalar la API de Ollama y el modelo qwen2.5:3B localmente.  
+2. Instala `postgresql` y configura tus credenciales en `.env`.  
+3. Haz una prueba con `./cli.sh`.  
+4. Inicia un chat de texto con `node index.js`.
+5. Instala las dependencias necesarias y `voice2json` con `install_voice2json.sh`.
+5. Inicia un chat por voz con `./listener3.sh`.  
 
-## Next steps
+## Próximos pasos
 
-1. Use kiwix-serve as a grounding source of truth for RAG.
-2. Imlement a query breakdown algorithm that searches for good article candidates with kiwix search and looks through the indices to extract relevant snippets for contextualizing the response.
-3. Implement an online version that leverages deepseek to optimize AI processing times.
+1. Usar **kiwix-serve** como fuente de veracidad para RAG.  
+2. Implementar un algoritmo de descomposición de consultas que busque buenos artículos candidatos con la búsqueda de kiwix y recorra los índices para extraer fragmentos relevantes que contextualicen la respuesta.  
+3. Implementar una versión en línea que aproveche **deepseek** para optimizar los tiempos de procesamiento de la IA.  
