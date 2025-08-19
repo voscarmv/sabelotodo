@@ -1,18 +1,20 @@
 #!/bin/bash
 
-source whisper-env/bin/activate
-export LD_LIBRARY_PATH=/usr/local/src/openssl-1.1.1w
+# source whisper-env/bin/activate
+export LD_LIBRARY_PATH=./src/openssl-1.1.1w
 echo start tables
 node --env-file=.env tables.js
 echo end tables
 # echo $!
 EXIT=false
+PROF1=`cat profile1`
+PROF2=`cat profile2`
 
 while true ; do
     echo start loop
     # Start voice2json in background writing to fifo
     > record
-    voice2json --profile ~/.local/share/voice2json/es2 transcribe-stream --open >> record &
+    voice2json --profile $PROF2 transcribe-stream --open >> record &
     PID=$!
     echo $PID
     EXIT=false
@@ -75,7 +77,7 @@ while true ; do
     # echo 'Hola mundo.' | festival --tts --language spanish
 
     # Continue with record-command
-    voice2json --profile ~/.local/share/voice2json/es_kaldi-rhasspy record-command > output.wav
+    voice2json --profile $PROF1 record-command > output.wav
     whisper -o . -f json --language es --model tiny output.wav
     cat output.json
     BOT=`node --env-file=.env chat.js "./output.json"`

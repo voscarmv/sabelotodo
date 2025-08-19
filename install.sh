@@ -1,4 +1,8 @@
 #!/bin/bash
 
-curl -fsSL https://ollama.com/install.sh | sh
-ollama pull qwen2.5:3B
+./install_python.sh
+./install_psql.sh
+./install_ollama.sh
+./install_voice2json.sh
+./install_whisper.sh
+./install_pico2wave.sh
