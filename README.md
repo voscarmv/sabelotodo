@@ -22,12 +22,10 @@ Se priorizará el uso de herramientas **libres y de código abierto** con el fin
 
 ## Estado actual del desarrollo
 
-1. Ejecuta `./install.sh` para instalar la API de Ollama y el modelo qwen2.5:3B localmente.  
-2. Instala `postgresql` y configura tus credenciales en `.env`.  
-3. Haz una prueba con `./cli.sh`.  
-4. Inicia un chat de texto con `node index.js`.
-5. Instala las dependencias necesarias y `voice2json` con `install_voice2json.sh`.
-5. Inicia un chat por voz con `./listener3.sh`.  
+1. Ejecuta `./install.sh` para instalar todas las dependencias necesarias.  
+2. Haz una prueba con `./cli.sh`.  
+3. Inicia un chat de texto con `node index.js`.
+3. Inicia un chat por voz con `./listener3.sh`.  
 
 ## Próximos pasos
 
