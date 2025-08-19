@@ -7,4 +7,6 @@ const db = require('./db.js');
     console.log('start post');
     await db.postMessage(message);
     console.log('end post');
+    process.exit(0);
 })();
+

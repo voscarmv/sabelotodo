@@ -1,5 +1,12 @@
 #!/bin/bash
+ONLINE=false
 
+while getopts "o" opt; do
+  case $opt in
+    o) ONLINE=true ;;
+    *) echo "Usage: $0 [-o]"; exit 1 ;;
+  esac
+done
 # source whisper-env/bin/activate
 export LD_LIBRARY_PATH=$PWD/src/openssl-1.1.1w
 echo start tables
@@ -80,7 +87,11 @@ while true ; do
     voice2json --profile $PROF1 record-command > output.wav
     whisper -o . -f json --language es --model tiny output.wav
     cat output.json
-    BOT=`node --env-file=.env chat.js "./output.json"`
+    if $ONLINE ; then
+        BOT=`node --env-file=.env chatonline.js "./output.json"`
+    else
+        BOT=`node --env-file=.env chat.js "./output.json"`
+    fi
     echo $BOT
     # espeak -p 0 -v spanish "$BOT"
     pico2wave -l es-ES -w bot.wav "$BOT" && aplay bot.wav

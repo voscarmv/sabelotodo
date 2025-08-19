@@ -26,7 +26,8 @@ Se priorizará el uso de herramientas **libres y de código abierto** con el fin
 2. Ejecuta `./install.sh` para instalar todas las dependencias necesarias.  
 3. Haz una prueba con `./cli.sh`.  
 4. Inicia un chat de texto con `node index.js`.
-5. Inicia un chat por voz con `./listener3.sh`.  
+5. Inicia un chat por voz offline con `./listener3.sh`. 
+5. Inicia un chat por voz en línea con deepseek con `./listener3.sh -o`. 
 
 ## Próximos pasos
 
