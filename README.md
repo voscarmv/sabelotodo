@@ -22,10 +22,11 @@ Se priorizará el uso de herramientas **libres y de código abierto** con el fin
 
 ## Estado actual del desarrollo
 
-1. Ejecuta `./install.sh` para instalar todas las dependencias necesarias.  
-2. Haz una prueba con `./cli.sh`.  
-3. Inicia un chat de texto con `node index.js`.
-3. Inicia un chat por voz con `./listener3.sh`.  
+1. Ejecuta `npm install`
+2. Ejecuta `./install.sh` para instalar todas las dependencias necesarias.  
+3. Haz una prueba con `./cli.sh`.  
+4. Inicia un chat de texto con `node index.js`.
+5. Inicia un chat por voz con `./listener3.sh`.  
 
 ## Próximos pasos
 
