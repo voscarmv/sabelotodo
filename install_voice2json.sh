@@ -36,7 +36,7 @@ sudo apt install ./voice2json_2.1_amd64.deb
 # To run voice2json export the openssl-1.1.1w dir as LD_LIBRARY_PATH
 # This allows it to run from the local shell without altering the host system
 
-# export LD_LIBRARY_PATH=../src/openssl-1.1.1w
+export LD_LIBRARY_PATH=../src/openssl-1.1.1w
 # voice2json transcribe-wav --open < test.wav
 
 # Generate profiles for appropriate timeouts when listening to wakeword and voice chat

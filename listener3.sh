@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # source whisper-env/bin/activate
-export LD_LIBRARY_PATH=./src/openssl-1.1.1w
+export LD_LIBRARY_PATH=$PWD/src/openssl-1.1.1w
 echo start tables
 node --env-file=.env tables.js
 echo end tables
