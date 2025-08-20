@@ -27,7 +27,7 @@ Se priorizará el uso de herramientas **libres y de código abierto** con el fin
 3. Haz una prueba con `./cli.sh`.  
 4. Inicia un chat de texto con `node index.js`.
 5. Inicia un chat por voz offline con `./listener3.sh`. 
-5. Inicia un chat por voz en línea con deepseek con `./listener3.sh -o`. 
+6. Inicia un chat por voz en línea usando deepseek con `./listener3.sh -o`. 
 
 ## Próximos pasos
 
