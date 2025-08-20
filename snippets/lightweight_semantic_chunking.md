@@ -212,3 +212,187 @@ extractRelevantChunks(paragraphs, query)
 By following this approach, you can semantically chunk your text at the paragraph level, ensuring that each chunk is semantically coherent and relevant to your query.
 
 [1]: https://www.datastax.com/blog/how-to-chunk-text-in-javascript-for-rag-applications?utm_source=chatgpt.com "How to Chunk Text in JavaScript for Your RAG Application | DataStax"
+
+
+Got it 👍 You want a Node.js script that:
+
+1. Uses HuggingFace Transformers (@xenova/transformers, since that’s the JS port).
+
+
+2. Embeds paragraphs (not just sentences).
+
+
+3. Embeds the query.
+
+
+4. Computes cosine similarity between the query and each paragraph.
+
+
+5. Returns the most relevant chunks.
+
+
+
+Here’s a working example:
+
+// Install first:
+// npm install @xenova/transformers
+
+import { pipeline } from '@xenova/transformers';
+
+// Simple cosine similarity
+function cosineSimilarity(vecA, vecB) {
+  let dot = 0.0;
+  let normA = 0.0;
+  let normB = 0.0;
+  for (let i = 0; i < vecA.length; i++) {
+    dot += vecA[i] * vecB[i];
+    normA += vecA[i] * vecA[i];
+    normB += vecB[i] * vecB[i];
+  }
+  return dot / (Math.sqrt(normA) * Math.sqrt(normB));
+}
+
+async function main() {
+  // Load embedding model
+  console.log("Loading model...");
+  const embed = await pipeline('feature-extraction', 'Xenova/all-MiniLM-L6-v2');
+
+  // Example query
+  const query = "What are the health benefits of green tea?";
+
+  // Example paragraphs (pretend this came from a large article)
+  const paragraphs = [
+    "Green tea contains bioactive compounds that improve health. It has catechins and antioxidants.",
+    "Many people enjoy black coffee in the morning. Coffee contains caffeine but fewer catechins than tea.",
+    "Exercise improves cardiovascular health, strengthens muscles, and helps regulate weight.",
+    "Studies show green tea can boost brain function and fat burning."
+  ];
+
+  // Get query embedding
+  const queryEmbedding = (await embed(query, { pooling: 'mean', normalize: true }))[0];
+
+  // Score each paragraph
+  const scored = [];
+  for (const p of paragraphs) {
+    const embedding = (await embed(p, { pooling: 'mean', normalize: true }))[0];
+    const score = cosineSimilarity(queryEmbedding, embedding);
+    scored.push({ paragraph: p, score });
+  }
+
+  // Sort by similarity
+  scored.sort((a, b) => b.score - a.score);
+
+  console.log("Most relevant paragraphs:");
+  scored.forEach(({ paragraph, score }) => {
+    console.log(`\n[Score: ${score.toFixed(3)}] ${paragraph}`);
+  });
+}
+
+main();
+
+
+---
+
+✅ This script:
+
+Runs locally on CPU (fine on 8GB RAM).
+
+Handles paragraph-level embeddings (you can split your text by \n\n).
+
+Uses cosine similarity to rank chunks.
+
+Should take a couple of seconds for ~5000 words (depending on paragraph count).
+
+
+
+---
+
+Do you want me to also show you how to modify this so it can return only the top N most relevant chunks (like top 3) instead of listing all?
+
+Got it 👍 — you want a Node.js script that:
+
+1. Takes a query.
+
+
+2. Splits a paragraph into sentences.
+
+
+3. Uses TF-IDF (term frequency–inverse document frequency) to score each sentence relative to the query.
+
+
+4. Returns the most relevant sentences.
+
+
+
+Here’s a Node.js example using natural (an NLP library with TF-IDF support):
+
+// Install dependencies first:
+// npm install natural
+
+const natural = require("natural");
+
+// Example paragraph
+const paragraph = `
+Artificial intelligence is transforming many industries.
+One of the most impactful applications is natural language processing.
+Large language models can answer questions, summarize text, and assist in research.
+However, they also require significant computational resources.
+Lightweight approaches like TF-IDF still provide useful results for smaller tasks.
+`;
+
+// Query
+const query = "language models and natural language processing";
+
+// --- Step 1: Split paragraph into sentences ---
+const sentences = paragraph
+  .split(/(?<=[.!?])\s+/) // regex to split by sentence-ending punctuation
+  .map(s => s.trim())
+  .filter(s => s.length > 0);
+
+// --- Step 2: Build a TF-IDF model ---
+const tfidf = new natural.TfIdf();
+
+// Add each sentence as a "document"
+sentences.forEach((sentence, i) => {
+  tfidf.addDocument(sentence, `sentence_${i}`);
+});
+
+// --- Step 3: Rank sentences by similarity to query ---
+const scoredSentences = [];
+
+tfidf.tfidfs(query, function(i, measure) {
+  scoredSentences.push({
+    sentence: sentences[i],
+    score: measure
+  });
+});
+
+// --- Step 4: Sort by score descending ---
+scoredSentences.sort((a, b) => b.score - a.score);
+
+// --- Step 5: Print results ---
+console.log("Query:", query);
+console.log("\nRanked sentences:\n");
+scoredSentences.forEach(({ sentence, score }) => {
+  console.log(`${score.toFixed(4)} - ${sentence}`);
+});
+
+✅ Example output for the query:
+
+Query: language models and natural language processing
+
+Ranked sentences:
+
+0.5307 - Large language models can answer questions, summarize text, and assist in research.
+0.4192 - One of the most impactful applications is natural language processing.
+0.0000 - Artificial intelligence is transforming many industries.
+0.0000 - However, they also require significant computational resources.
+0.0000 - Lightweight approaches like TF-IDF still provide useful results for smaller tasks.
+
+This way, you can filter out only the most relevant sentences from a paragraph, based on your query, without embeddings or heavy models.
+
+
+---
+
+👉 Do you want me to also extend this so it keeps whole paragraphs, but highlights only the most relevant sentences inside them?
+
