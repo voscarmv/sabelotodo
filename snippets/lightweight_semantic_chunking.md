@@ -396,3 +396,101 @@ This way, you can filter out only the most relevant sentences from a paragraph, 
 
 👉 Do you want me to also extend this so it keeps whole paragraphs, but highlights only the most relevant sentences inside them?
 
+
+Absolutely! There are several open-source projects designed for lightweight Retrieval-Augmented Generation (RAG) that can run efficiently on a CPU without a GPU.  These solutions are ideal for self-hosted environments, allowing you to search and retrieve information from text-based knowledge bases using small language models. 
+
+
+---
+
+🔹 Notable Lightweight RAG Projects for CPU-Only Environments
+
+1. MiniRAG
+
+Overview: MiniRAG is a novel RAG system optimized for small language models (SLMs). It introduces a semantic-aware heterogeneous graph indexing mechanism and a lightweight topology-enhanced retrieval approach.
+
+Key Features:
+
+Combines text chunks and named entities in a unified structure.
+
+Achieves comparable performance to LLM-based methods while requiring only 25% of the storage space.
+
+Fully open-source implementation available.
+
+
+Use Case: Ideal for on-device scenarios with complex queries.
+
+Link: MiniRAG on GitHub
+
+
+2. LLMWare
+
+Overview: LLMWare is a retrieval-augmented generation framework that utilizes small, specialized models instead of large language models, significantly reducing computational and financial costs.
+
+Key Features:
+
+Offers a modular and scalable RAG architecture.
+
+Supports over 50 fine-tuned, small models optimized for enterprise tasks.
+
+Can run without a GPU, enabling lightweight deployments.
+
+
+Use Case: Suitable for organizations seeking efficient RAG systems that optimize performance and resource use.
+
+Link: LLMWare on GitHub
+
+
+3. Gamma 2B
+
+Overview: Gamma 2B is an open-source lightweight language model from Google, designed for local use cases without GPU/CUDA support.
+
+Key Features:
+
+Efficient for local deployments on systems without GPU.
+
+Provides a straightforward API for searching vectors within a database.
+
+
+Use Case: Ideal for self-hosted environments requiring efficient language models without GPU.
+
+Link: Gamma 2B on GitHub
+
+
+
+---
+
+🔹 Additional Tools and Frameworks
+
+FlashRAG: A modular toolkit for efficient retrieval-augmented generation research, offering a customizable modular framework and a rich collection of pre-implemented RAG works.
+
+Link: FlashRAG on GitHub
+
+
+Llama.cpp: An implementation of Llama inference code in pure C/C++, optimized for CPU performance, making it suitable for running on computers without GPU.
+
+Link: Llama.cpp on GitHub
+
+
+
+
+---
+
+🔹 Considerations for Self-Hosting
+
+When setting up a lightweight RAG system on a CPU-only environment, consider the following:
+
+Model Size: Choose models that are optimized for CPU inference, such as those with quantized weights or smaller architectures. 
+
+Vector Database: Utilize efficient vector databases like ChromaDB or Qdrant for storing and retrieving embeddings. 
+
+Text Chunking: Implement effective text chunking strategies to break down documents into manageable pieces for retrieval. 
+
+Embedding Models: Select embedding models that are lightweight and optimized for CPU usage. 
+
+
+
+---
+
+If you need assistance with setting up any of these frameworks or have specific requirements for your use case, feel free to ask!
+
+
