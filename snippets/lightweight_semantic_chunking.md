@@ -493,4 +493,75 @@ Embedding Models: Select embedding models that are lightweight and optimized for
 
 If you need assistance with setting up any of these frameworks or have specific requirements for your use case, feel free to ask!
 
+Yes — what you’re describing exists conceptually, but it doesn’t usually have a single standard name because it’s a hybrid between **query expansion** and **generative retrieval**. Let me break it down:
+
+---
+
+### 1. The constraint
+
+You said the *only* allowed search method over your large text base is **basic text matching** (exact string or regex).
+That means you cannot directly use embeddings, vector search, BM25, etc.
+
+So the trick is: you want an **LLM to imagine "likely fragments"** (keywords, n-grams, or short phrases) that are likely to occur in the relevant portions of your corpus — and then use those fragments as queries in the simple search engine.
+
+---
+
+### 2. What this technique is related to
+
+* **Query Expansion**
+  Classic IR (information retrieval) technique: take the original query and expand it with synonyms, paraphrases, related words, or predicted terms.
+  → Example: If query is *"causes of stomach ulcers"*, expansion may include "H. pylori", "NSAIDs", "gastric erosion".
+
+* **Pseudo-Relevance Feedback (PRF)**
+  From traditional IR: you first run a naive search, then use top results to extract more terms to refine the query.
+
+* **Generative Query Expansion (GQE)**
+  Modern LLM-based method: use an LLM to generate related keywords or likely fragments that would occur in the answer text.
+  → Example: You give the model: *"Generate 10 possible phrases that an article about stomach ulcers might contain."* It might produce: `"Helicobacter pylori infection"`, `"long-term use of aspirin"`, `"acid erosion of stomach lining"`.
+
+* **Generative Retrieval / LLM as Retriever**
+  Instead of embeddings, the LLM directly “imagines” identifiers, passages, or text spans that should exist in the corpus.
+  Example: *“What’s the capital of Mongolia?” → Model generates plausible passage text like '... the capital city, Ulaanbaatar ...'*
+  Then you match `Ulaanbaatar` against the corpus with string search.
+
+* **Hypothesis Generation + String Matching**
+  In biomedical or legal search, people use LLMs to hypothesize *possible phrases* that may exist in a paper/statute, then confirm via literal matching.
+
+---
+
+### 3. How this could work in practice
+
+Your pipeline could be:
+
+1. **Input query** → “What treatments exist for malaria?”
+2. **LLM generates candidate text fragments**
+
+   * "artemisinin-based combination therapy"
+   * "chloroquine resistance"
+   * "quinine derivatives"
+3. **Run simple text match** against the corpus for each fragment.
+4. **Collect hits** → these are your candidate relevant docs.
+
+---
+
+### 4. Examples / Precedent
+
+* **DocPrompting (Zhao et al., 2023)**: LLMs generate possible passages to retrieve docs.
+* **GENRE (Generative Retrieval, Facebook AI, 2020)**: LLM generates document IDs directly.
+* **GQE with T5 / GPT**: widely used in open-domain QA (generate paraphrases of query and rerank).
+* **Classic IR systems with thesauri expansion**: pre-LLM version of this idea.
+
+---
+
+✅ So to answer directly:
+
+* It doesn’t have *one universal name*, but it falls under:
+
+  * **Generative Query Expansion (GQE)**
+  * **Generative Retrieval**
+  * Sometimes also described as **hallucinated phrase search** in applied IR.
+
+---
+
+Would you like me to sketch a **practical workflow** (with prompts + pseudo-code) for using an LLM to generate those "plausible fragments" you can then run through your plain-text search engine?
 
