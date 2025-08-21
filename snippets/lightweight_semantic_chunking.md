@@ -565,3 +565,190 @@ Your pipeline could be:
 
 Would you like me to sketch a **practical workflow** (with prompts + pseudo-code) for using an LLM to generate those "plausible fragments" you can then run through your plain-text search engine?
 
+Yes — there are a few families of search algorithms and tricks that expand the power of **exact string matching** without going full semantic/vector search. These tend to be relatively lightweight computationally, so they sit between *plain grep* and *full embeddings*. Let me list the main ones:
+
+---
+
+## 1. **Approximate String Matching**
+
+These methods allow matches that are "close" to your query string:
+
+* **Edit distance (Levenshtein, Damerau–Levenshtein)**
+  Matches strings within N insertions/deletions/substitutions.
+  → Example: query `"hemorrhage"` would match `"hemorrhage"` and `"hemorage"`.
+
+* **Fuzzy search (as in `ag`, `ripgrep`, or `Lucene` with `fuzziness`)**
+  Built on edit distance; efficient indexing exists.
+
+* **n-gram matching**
+  Break text into overlapping chunks (character 3-grams: `"art"`, `"rte"`, `"tem"`) and match overlaps.
+  → This captures typos and near matches with low cost.
+
+---
+
+## 2. **Boolean & Proximity Matching**
+
+* **Boolean queries**
+  Expand query to: `"malaria" AND ("treatment" OR "therapy" OR "drug")`.
+  → Expands coverage while still exact string match per term.
+
+* **Proximity search**
+  Find words that occur near each other, e.g. `"malaria" NEAR/5 "treatment"`.
+  → Improves recall without embeddings.
+
+---
+
+## 3. **Synonym / Lexical Expansion (Rule-Based)**
+
+Instead of LLMs, you can cheaply precompute small **lexicons**:
+
+* Use **WordNet** or a domain-specific synonym dictionary.
+* Expand `"heart attack"` → `"myocardial infarction"`.
+* Then run basic text search with OR logic.
+
+This is still “cheap” compared to embeddings.
+
+---
+
+## 4. **Lightweight Semantic-ish Tricks**
+
+These don’t go full neural but give some semantic expansion:
+
+* **Stemming / Lemmatization**
+  `"running"`, `"ran"`, `"runs"` → `"run"`.
+  Improves match coverage cheaply.
+
+* **TF-IDF keyword weighting (BM25-lite)**
+  Still just counts words but prioritizes likely relevant docs.
+  Doesn’t require embeddings.
+
+* **Character-based or phonetic hashing**
+
+  * **Soundex / Metaphone**: Match words that sound alike.
+  * Useful for names and noisy text.
+
+---
+
+## 5. **Hybrid with LLMs (but minimal cost)**
+
+If you must keep search as *exact string match*, you can still ask an LLM once per query to produce a handful of **likely expansions**:
+
+* E.g. query `"lung cancer treatment"` → LLM outputs: `"chemotherapy"`, `"radiotherapy"`, `"targeted therapy"`.
+* Then you just OR those into your string search.
+  This is essentially **Generative Query Expansion** but computationally cheap since it’s a one-shot expansion, not per-document.
+
+---
+
+### 🔑 Summary
+
+If you want *low computational cost expansions* of exact matching:
+
+* **Approximate matching** (edit distance, n-grams, fuzzy search).
+* **Boolean / proximity** search operators.
+* **Rule-based lexical expansion** (synonyms, stemming, lemmatization).
+* **Lightweight phonetic matching** (Soundex/Metaphone).
+* **One-shot LLM query expansion**, then fall back to simple matching.
+
+---
+
+👉 Question for you: Do you want me to focus on algorithms you can **implement from scratch** (say in Python or bash with your own corpus), or more on **ready-to-use tools** (like Lucene/Whoosh/Ripgrep with fuzzy matching)?
+
+Yes 👍 — on Ubuntu you can get a lot of these “lightweight IR” algorithms (fuzzy, approximate, synonym expansion, stemming, etc.) through existing packages and libraries. They fall into two groups:
+
+---
+
+## 🔹 1. Full-text search engines (index + query language)
+
+These give you approximate string matching, Boolean logic, proximity, stemming, synonyms, etc. out of the box:
+
+* **Apache Lucene / Solr** (`solr-tomcat` in Ubuntu repos, or install manually)
+
+  * Very powerful, supports fuzzy queries (`levenshtein`), synonyms, stemming, proximity.
+  * Java-based.
+
+* **Elasticsearch / OpenSearch** (packages via `.deb` repos)
+
+  * Lucene under the hood, REST API.
+  * Fuzzy search, analyzers (stemming, lemmatization), synonym expansion.
+
+* **Xapian** (`xapian-tools`, `libxapian-dev`)
+
+  * Lightweight, C++ library with bindings for Python/Perl/etc.
+  * Supports probabilistic ranking (BM25), stemming, phrase/proximity search, boolean queries.
+  * Lower overhead than Elastic/Solr.
+
+* **Whoosh** (Python library, `pip install whoosh`)
+
+  * Pure Python, easy to integrate.
+  * Provides stemming, Boolean queries, fuzzy search.
+  * Good if you want something small, not a server.
+
+---
+
+## 🔹 2. Command-line / text-processing tools with fuzzy matching
+
+These are lighter than full IR engines, can run directly on text files:
+
+* **ag (the silver searcher)** (`silversearcher-ag`)
+
+  * Like `grep`, but very fast. Doesn’t have fuzzy by default.
+
+* **ripgrep** (`ripgrep`)
+
+  * Grep-like but faster. Same limitation — exact by default.
+
+* **fzf** (`fzf`)
+
+  * Fuzzy finder, interactive. Works well for filenames/lines, not whole corpora.
+
+* **tre-agrep** (`tre-agrep`)
+
+  * Classic approximate matching (`agrep`), allows specifying edit distance tolerance.
+
+* **sift** or **ugrep** (`ugrep`)
+
+  * Extended grep with approximate/fuzzy matching options.
+
+---
+
+## 🔹 3. NLP / Text processing libs (for expansion/stemming)
+
+* **NLTK** (`python3-nltk`)
+
+  * Stemming, lemmatization, synonym lookup (via WordNet).
+
+* **spaCy** (`python3-spacy`)
+
+  * More modern, can lemmatize and tokenize efficiently.
+
+* **snowball stemmers** (`snowball` package, or built into many IR engines).
+
+---
+
+## 🔹 4. Specialized approximate-matching libs
+
+If you just want edit-distance style search over plain text:
+
+* **python-Levenshtein** (`python3-levenshtein`)
+
+  * Super fast edit distance calculations.
+
+* **fuzzywuzzy / rapidfuzz** (`python3-rapidfuzz`)
+
+  * Token sort/ratio matching, fuzzy substring search.
+
+* **tre** (`libtre-dev`)
+
+  * Regex engine with approximate matching.
+
+---
+
+### ✅ Recommendation
+
+* If you want **index + flexible queries, but lightweight** → **Xapian** or **Whoosh**.
+* If you want **grep-like approximate search** → **tre-agrep** or **ugrep**.
+* If you want to **expand queries semantically** → combine one of the above with **NLTK/WordNet** for synonym expansion.
+
+---
+
+Do you want me to put together a **side-by-side comparison table** (features, Ubuntu package name, complexity) so you can quickly choose between Xapian, Whoosh, tre-agrep, etc.?
