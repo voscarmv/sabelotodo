@@ -233,7 +233,7 @@ Got it 👍 You want a Node.js script that:
 
 
 Here’s a working example:
-
+```javascript
 // Install first:
 // npm install @xenova/transformers
 
@@ -289,7 +289,7 @@ async function main() {
 }
 
 main();
-
+```
 
 ---
 
@@ -325,7 +325,7 @@ Got it 👍 — you want a Node.js script that:
 
 
 Here’s a Node.js example using natural (an NLP library with TF-IDF support):
-
+```javascript
 // Install dependencies first:
 // npm install natural
 
@@ -376,7 +376,7 @@ console.log("\nRanked sentences:\n");
 scoredSentences.forEach(({ sentence, score }) => {
   console.log(`${score.toFixed(4)} - ${sentence}`);
 });
-
+```
 ✅ Example output for the query:
 
 Query: language models and natural language processing
