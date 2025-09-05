@@ -1,13 +1,19 @@
 #!/bin/bash
 
-sudo apt install postgresql postgresql-contrib
-sudo su - postgres
-read -p "Postgres username: " USER
-read -p "Postgres password: " PASS
+sudo apt install -y postgresql postgresql-contrib
+
+read -p "Postgres username: " PGUSER
+read -s -p "Postgres password: " PASS
+echo
 read -p "Database name: " DB
-psql -c "create database $DB;"
-psql -c "CREATE USER $USER WITH PASSWORD $PASS;"
-psql -c "GRANT ALL PRIVILEGES ON DATABASE $DB TO $USER;"
-psql -d $DB -c "GRANT ALL ON SCHEMA public TO $USER;"
-echo "db_url=postgres://$USER:$PASS@localhost/$DB" > .env
-echo "Remember to change your .env file to your username, db name and password!"
+
+sudo -u postgres psql <<EOF
+CREATE DATABASE $DB;
+CREATE USER $PGUSER WITH PASSWORD '$PASS';
+GRANT ALL PRIVILEGES ON DATABASE $DB TO $PGUSER;
+\c $DB
+GRANT ALL ON SCHEMA public TO $PGUSER;
+EOF
+
+echo "db_url=postgres://$PGUSER:$PASS@localhost/$DB" > .env
+echo "✅ Database, user, and .env file created. Edit .env if needed."
