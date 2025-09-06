@@ -88,7 +88,7 @@ while true ; do
     voice2json --profile $PROF1 record-command > output.wav
     whisper -o . -f json --language es --model tiny output.wav
     # faster-whisper -o output.srt --language es --model tiny output.wav
-    # ( echo '{"text":"' ; cat text | sed 's/[0-9][0-9]*.*//;/^$/d' ; echo '"}' ) | tr -d '\n' > output.json
+    # ( echo '{"text":"' ; cat output.srt | sed 's/[0-9]*.*//;/^$/d' ; echo '"}' ) | tr -d '\n' > output.json
     cat output.json
     if $ONLINE ; then
         BOT=`node --env-file=.env chatonline.js "./output.json"`
