@@ -8,6 +8,7 @@ while getopts "o" opt; do
   esac
 done
 # source whisper-env/bin/activate
+source whisper/whisper-env/bin/activate
 export LD_LIBRARY_PATH=$PWD/src/openssl-1.1.1w
 echo start tables
 node --env-file=.env tables.js
@@ -85,7 +86,9 @@ while true ; do
 
     # Continue with record-command
     voice2json --profile $PROF1 record-command > output.wav
-    faster-whisper -o . -f json --language es --model tiny output.wav
+    whisper -o . -f json --language es --model tiny output.wav
+    # faster-whisper -o output.srt --language es --model tiny output.wav
+    # ( echo '{"text":"' ; cat text | sed 's/[0-9][0-9]*.*//;/^$/d' ; echo '"}' ) | tr -d '\n' > output.json
     cat output.json
     if $ONLINE ; then
         BOT=`node --env-file=.env chatonline.js "./output.json"`

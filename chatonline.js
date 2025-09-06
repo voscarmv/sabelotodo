@@ -48,6 +48,6 @@ const model = 'deepseek-chat';
         });
         await db.postMessage(completion.choices[0].message);
     }
-    console.log(completion.choices[0].message.content);
+    console.log(completion.choices[0].message.content.replace(/\*/g,' '));
     process.exit(0);
 })();
